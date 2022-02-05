@@ -1,0 +1,27 @@
+First Way :
+
+First of all, right after implementing the conjured item property, it is obvious that there
+will be more conjured items sold at the GildedRose.
+Thereby, a good idea to expand this code would be a functionnality to detect the word "Conjured"
+at the beginning of an item's name, it can be a simple function which gets the all the Item's names
+from the list, and calls the specific "Update_Conjured_Item" function if detected.
+
+Second Way :
+
+An other idea would be to display the different "rules" and patterns about each Item 
+in order to let the customer have an idea about how each item is supposed to move in the next days.
+In addition, as the time passes, a cool feature would be to print some graphs about the item's historical
+evolution or, in other words, graphs which show how item's quality have evolved during the past days.
+We would just need to store each item's quality for each day and use the c# Graphics property 
+of the PrintPageEventArgs.
+
+Third Way :
+
+Last but not least, my last idea would be a feature which allows the user to add manually an item
+to the Item's list. He would just has to enter 1 (or any other number) to open an other console 
+which asks him to enter :
+- The Item's name
+- Its initial SellIn
+- Its initial Quality
+- Its quality at (Day - 1) when (SellIn > 0)
+- Its quality at (Day - 1) when (SellIn < 0)
